@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    background: #212121;
+    background:  #1B1B1B;
 }
 
 
@@ -43,7 +43,7 @@ a {
 li.sample > a,
 li > a:hover {
   background-color: transparent;
-  color: white;
+  color: #8c8c8c;
 }
 
 li > a:after {
@@ -54,9 +54,9 @@ li > a:after {
   width: 70%;
   height: 5px;
   transform: scaleX(0);
-  background-color: #FF355e;
+  background-color: #FF355E;
   transition: all .2s ease;
-  opacity: 0.6;
+  
 }
 
 
