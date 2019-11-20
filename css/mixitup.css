@@ -1,0 +1,17 @@
+ul{
+  height: auto;
+  overflow: hidden;
+  width: 960px;
+  list-style: none;
+  background: #2c3e50;
+  margin:15px auto 45px;
+  color: #ffffff;
+}
+
+ul li{
+  padding: 15px 20px;
+  width: auto;
+  height: auto;
+  float:left;
+cursor:pointer;
+}

@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: white;
+  ;
+}
+
+body h1 {
+  color: black;
+}
+
+
+
+.bsheader {
+  background-color: #FEFEFA;
+}
+
+.bsheader p {
+  color: black;
+}
+
+.card {
+  text-align: left;
+}
+
+.card h4 {
+  color: black;
+}
+
+.card p {
+  color: black;
+}
+
+/*.card-img-top{
+  height: 50%;
+  width: 50%;
+}*/
+/*.card-columns {
+  text-align: center;
+}*/
