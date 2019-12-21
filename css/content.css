@@ -52,7 +52,7 @@ header
 header ul
 {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	max-width: 1200px;
 	margin: 0 auto;
 padding: 10px 0px;
