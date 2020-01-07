@@ -23,7 +23,7 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-     <link href="css/loader.css" rel="stylesheet">
+  <link href="css/loader.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
 
@@ -56,9 +56,9 @@
           <li><a href="#portfolio">DEV</a></li>
           <li><a href="#sprint0">Sprint 0</a></li>
           <li><a href="#sprint1">Sprint 1</a></li>
-          <li><a href="#portfolio">Sprint 2</a></li>
-          <li><a href="#portfolio">Sprint 3</a></li>
-
+          <li><a href="#sprint2">Sprint 2</a></li>
+          <li><a href="#sprint3">Sprint 3</a></li>
+          <li><a href="#selfie">Selfie Week</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -78,8 +78,8 @@
   </section><!-- #hero -->
 
   <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
   </div>
 
@@ -92,11 +92,12 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Development</h3>
-          <p class="section-description">Hieronder zie je al de proof of conepts die ik gemaakt heb. Je kunt filteren tussen CSS, JS en prototypes waar alles bij elkaar komt tot grotere projecten.</p>
+          <p class="section-description">Hieronder zie je een voorbeeld van een aantal PoCs (Proof of Concepts) die gemaakt heb voor het vak Development (DEV/DED).<br> Als je meer PoCs wil zien, klik dan op de "Development Dashboard" knop. Daarin
+            staan alle PoCs die ik dit semester heb gemaakt.</p>
         </div>
         <div class="row">
 
-          <div class="col-lg-12">
+          <!-- <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter=".filter-css, .filter-js, .filter-pro" class="filter-active">All</li>
               <li data-filter=".filter-css">CSS</li>
@@ -104,225 +105,80 @@
               <li data-filter=".filter-pro">Prototypes</li>
 
             </ul>
-          </div>
+          </div> -->
         </div>
 
         <div class="row" id="portfolio-wrapper">
+
           <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-js">
-              <a href="pages/randomcolor.html">
-
-                <img src="img/bgrandomcolor.png" alt="bgcolor" class="image">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-css filter-js filter-pro">
+              <a href="pages/firebaseauth5.html">
+                <img src="img/firebaseauth4.png" alt="firebaseauth" class="image">
                 <div class="overlay">
-
                 </div>
                 <div class="details">
-                  <h4>Random Color Background</h4>
-                  <span>Random Color Background met timer</span>
+                  <h4>Summary Webapp</h4>
+                  <span>Firebase Authentication</span>
                 </div>
               </a>
             </div>
           </div>
 
           <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/coloroverlay.html">
-                <img src="img/coloroverlay1.png" alt="bgcolor" class="image">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-css filter-js filter-pro">
+              <a href="pages/firestore4.html">
+
+                <img src="img/firestore4.png" alt="firebasefirestore" class="image">
                 <div class="overlay">
+
                 </div>
                 <div class="details">
-                  <h4>Color Overlay 1</h4>
-                  <span>Kleur over een afbeelding</span>
+                  <h4>Food Database</h4>
+                  <span>Firebase Firestore</span>
                 </div>
               </a>
             </div>
           </div>
 
           <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/coloroverlay2.html">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-css filter-js filter-pro">
+              <a href="pages/rgbslider.html">
 
-                <img src="img/coloroverlay2.png" alt="bgcolor" class="image">
+                <img src="img/rgbslider.png" alt="rgbslider" class="image">
                 <div class="overlay">
-
                 </div>
                 <div class="details">
-                  <h4>Color Overlay 2</h4>
-                  <span>Fade in hover effect over afbeelding</span>
+                  <h4>RGB-Slider</h4>
+                  <span>RGB color slider</span>
                 </div>
               </a>
             </div>
           </div>
 
           <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/coloroverlay3.html">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-css filter-js filter-pro">
+              <a href="pages/aos.html">
 
-                <img src="img/coloroverlay3.png" alt="bgcolor" class="image">
+                <img src="img/aos.png" alt="aos" class="image">
                 <div class="overlay">
                 </div>
                 <div class="details">
-                  <h4>Color Overlay 3</h4>
-                  <span>Fade in hover effect over afbeelding</span>
+                  <h4>Animate On Scroll</h4>
+                  <span>Fade animaties terwijl je scrolt</span>
                 </div>
               </a>
             </div>
           </div>
 
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/bootstrapbasics.html">
 
-                <img src="img/bootstrapbasics.png" alt="bootstrapbasics" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Bootstrap Basics</h4>
-                  <span>De basis van bootstrap.</span>
-                </div>
-              </a>
-            </div>
+          <div class="dashboardBtn">
+            <a href="pages/dashboard.html">
+              <button class="button button3"><b> Development <br> Dashboard</b> </button>
+            </a>
           </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-pro">
-              <a href="pages/responsive.html">
-
-                <img src="img/responsive.png" alt="responsive" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Responsive Webpage</h4>
-                  <span>Responsive Webpage + Navigation bar</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-pro">
-              <a href="pages/nwsite1.html">
-
-                <img src="img/nwsite1.png" alt="nwsite1" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Nachtwakers Website 1</h4>
-                  <span>Nachtwakers website 1 gemaakt met bootstrap</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/heropage.html">
-
-                <img src="img/heropage.png" alt="heropage" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Hero Image</h4>
-                  <span>Hero image voor portfolio</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/cube.html">
-
-                <img src="img/cube.png" alt="heropage" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Bouncy Cube</h4>
-                  <span>Bouncy cube Animation met JS</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/sections.html">
-
-                <img src="img/sections.png" alt="heropage" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Sections</h4>
-                  <span>Navigatie met sections + smooth scroll</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/fullpage.html">
-
-                <img src="img/fullpage.png" alt="heropage" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Fullpage</h4>
-                  <span>Fullpage paginas met 100vh</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-css">
-              <a href="pages/navani.html">
-                <img src="img/navani.png" alt="heropage" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Navigation Animation</h4>
-                  <span>Navigatie Animatie</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-js">
-              <a href="pages/alert.html">
-                <img src="img/alert.png" alt="heropage" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Alert & Functions</h4>
-                  <span>Alert functie in JS</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-image">
-            <div class="col-lg-3 col-md-6 portfolio-item filter-js">
-              <a href="pages/array.html">
-                <img src="img/array.png" alt="heropage" class="image">
-                <div class="overlay">
-                </div>
-                <div class="details">
-                  <h4>Arrays</h4>
-                  <span>Arrays</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
 
 
     </section><!-- #portfolio -->
-
-
-
-
 
     <section id="sprint0">
       <div class="container wow fadeInUp">
@@ -353,20 +209,85 @@
           <a href="pages/bg.html"> <img src="img/brandguideimg.png" alt="Brandguide">
         </div>
         <div class="sprintimg">
-          <a href="#"> <img src="img/websitedesignimg.png" alt="WebDesign">
+          <a href="pages/websitedesign.html"> <img src="img/websitedesignimg.png" alt="WebDesign">
         </div>
       </div>
 
-      <!--<div class="loader-wrapper">
-          <span class="loader"><span class="loader-inner"></span></span>
-      </div> -->
+
 
 
 
 
     </section>
 
+    <section id="sprint2">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Sprint 2</h3>
+          <p class="section-description">Hieronder staan alle projecten/opdrachten waaraan ik gewerkt heb in sprint 2.</p>
+        </div>
+      </div>
 
+      <div class="img-container1">
+        <div class="sprintimg">
+          <a href="pages/arposter.html"> <img src="img/arposter.png" alt="arposter">
+        </div>
+      </div>
+
+
+
+
+
+
+    </section>
+
+    <section id="sprint3">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Sprint 3</h3>
+          <p class="section-description">Hieronder staan alle projecten/opdrachten waaraan ik gewerkt heb in sprint 3.</p>
+        </div>
+      </div>
+
+      <div class="img-container1">
+        <div class="sprintimg">
+          <a href="pages/bg.html"> <img src="img/customerjourney.png" alt="Brandguide">
+        </div>
+      </div>
+
+
+
+
+
+
+    </section>
+
+    <section id="selfie">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Selfie Week</h3>
+          <p class="section-description">Hieronder staan alle projecten waaraan ik gewerkt heb in de verschillende selfie weken.</p>
+        </div>
+      </div>
+
+      <div class="img-container1">
+        <div class="sprintimg">
+          <a href="pages/selfieweek1.html"> <img src="img/selfieweek1.png" alt="Brandguide">
+        </div>
+        <div class="sprintimg">
+          <a href="pages/selfieweek2.html"> <img src="img/selfieweek2.png" alt="WebDesign">
+        </div>
+        <div class="sprintimg">
+          <a href="pages/selfieweek3.html"> <img src="img/selfieweek3.png" alt="WebDesign">
+        </div>
+      </div>
+
+
+
+
+
+
+    </section>
 
   </main>
 
