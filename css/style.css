@@ -65,6 +65,40 @@ h1, h2, h3, h4, h5, h6 {
   animation: loader 2s infinite ease;
 }*/
 
+.dashboardBtn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+
+  border: none;
+  color: white;
+  padding: 16px 130px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+
+.button3 {
+  background-color:#1b1b1b;
+  color: #FF355E;
+  border-radius: 4px;
+}
+
+.button3:hover {
+  background-color: #FF355E;
+  color: white;
+}
+
 .image{
   display: block;
   width: 115%;
@@ -243,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 5px 0 0px 0;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
@@ -678,6 +712,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   padding: 90px 0px;
 }
+
+#sprint2 {
+  background: #1b1b1b;
+  padding: 90px 0px;
+}
+
+#sprint3 {
+  background: #fff;
+  padding: 90px 0px;
+}
+
+#sprint3 {
+  background: #fff;
+  padding: 90px 0px;
+}
+
+#selfie {
+  background: #1b1b1b;
+  padding: 90px 0px;
+}
+
 
 
 /* About Us Section
