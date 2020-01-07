@@ -8,20 +8,42 @@ function renderFood(doc) {
   let merk = document.createElement('span');
   let kcal = document.createElement('span');
   let cross = document.createElement('div');
+  let pen = document.createElement('button');
+
+
+//  pen.setAttribute('data-target', 'modal-edit');
+  //pen.setAttribute('class', 'btn modal-trigger');
+
+
 
   li.setAttribute('data-id', doc.id);
   product.textContent = doc.data().product;
   merk.textContent = doc.data().merk;
   kcal.textContent = doc.data().kcal;
   cross.textContent = 'x';
+  pen.textContent = 'edit';
 
   li.appendChild(product);
   li.appendChild(merk);
   li.appendChild(kcal);
   li.appendChild(cross);
+  li.appendChild(pen);
 
   foodList.appendChild(li);
 
+
+// edit data
+
+pen.addEventListener('click',(e) =>{
+  e.stopPropagation();
+  let id = e.target.parentElement.getAttribute('data-id');
+  db.collection('food').doc(id).update({
+    product: form.product.value,
+    merk: form.merk.value,
+    kcal: form.kcal.value
+  })
+
+});
   // deleting data
   cross.addEventListener('click', (e) => {
     let cfirm = confirm("Klik op OK om het product te verwijderen of op cancel om de actie te annuleren");
@@ -65,3 +87,13 @@ db.collection('food').orderBy('product').onSnapshot(snapshot => {
     }
   })
 })
+
+// setup materialize components
+document.addEventListener('DOMContentLoaded', function() {
+
+  var modals = document.querySelectorAll('.modal');
+  M.Modal.init(modals);
+
+
+
+});

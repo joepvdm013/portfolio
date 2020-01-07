@@ -32,7 +32,7 @@ li{
     color: #555;
     position: relative;
     border-bottom: 1px solid #e6e6e6;
-    height: 46px;
+    /*height: 46px;*/
 }
 
 li:nth-child(even){
@@ -69,6 +69,7 @@ li div{
     cursor:  pointer;
 }
 
+
 form input{
     float: left;
     /*width: 38%;*/
@@ -95,15 +96,15 @@ form:after{
     display: block;
 }
 
-button{
+ button{
     border: 0;
-    background: #fff;
+    background: #FF355E;
     border-radius: 10px;
-    padding: 13px;
+    /*padding: 13px;*/
     width: 14%;
     box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
     font-weight: bold;
     font-family: ubuntu;
     letter-spacing: 1px;
-    color: #999;
+    color: #fff;
 }

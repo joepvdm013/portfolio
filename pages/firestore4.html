@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
@@ -26,8 +27,26 @@
 <input type="text" name="product" placeholder="Product Naam">
 <input type="text" name="merk" placeholder="Merk Naam">
 <input type="text" name="kcal" placeholder="Kcal">
-<button>Toevoegen</button>
+<button id="btnAdd">Toevoegen</button>
     </form>
+
+    <!-- EDIT SUMMARY MODAL -->
+    <div id="modal-edit" class="modal">
+      <div class="modal-content">
+        <h4>Edit Summary</h4><br />
+        <form id="edit-form">
+          <div class="input-field">
+            <input type="text" id="title2" required>
+            <label for="title">Episode Title</label>
+          </div>
+          <div class="input-field">
+            <textarea id="content2" class="materialize-textarea" required></textarea>
+            <label for="content">Episode Content</label>
+          </div>
+          <button class="btn red lighten-3 z-depth-0">Edit</button>
+        </form>
+      </div>
+    </div>
 
     <ul id="food-list"></ul>
 

@@ -1,4 +1,4 @@
-//listen auth changes
+//listen auth changes.
 auth.onAuthStateChanged(user => {
   console.log(user);
   if (user) {
@@ -13,6 +13,28 @@ auth.onAuthStateChanged(user => {
     setupSummaries([]);
   }
 });
+
+// edit summary
+const editForm = document.querySelector('#edit-form');
+editForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let id = e.target.parentElement.getAttribute('data-id');
+  db.collection('summaries').doc(id).update({
+    title: editForm['title2'].value,
+    content: editForm['content2'].value
+  // db.collection('summaries').add({
+  //   title: createForm['title'].value,
+  //   content: createForm['content'].value
+  }).then(()=>{
+    //close modal and reset form
+    const modal = document.querySelector('#modal-edit');
+    M.Modal.getInstance(modal).close();
+    editForm.reset();
+  }).catch(err =>{
+    console.log(err.message);
+  })
+})
+
 // create new summary
 const createForm = document.querySelector('#create-form');
 createForm.addEventListener('submit', (e) => {

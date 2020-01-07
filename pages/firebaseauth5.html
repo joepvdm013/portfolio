@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Compiled and minified CSS -->
+  <!-- Compiled and minified CSS .-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="../css/knightmares.css">
   <title>Kitchen Nightmares</title>
@@ -27,6 +27,9 @@
       </li>
       <li class="logged-in" style="display:none;">
         <a href="#" class="white-text modal-trigger" data-target="modal-create">Create Summary</a>
+      </li>
+      <li class="logged-in" style="display:none;">
+        <a href="#" class="white-text modal-trigger" data-target="modal-edit">Edit Summary</a>
       </li>
       <li class="logged-out" style="display:none;">
         <a href="#" class="white-text modal-trigger" data-target="modal-login">Login</a>
@@ -100,6 +103,24 @@
           <label for="content">Episode Content</label>
         </div>
         <button class="btn blue darken-3 z-depth-0">Create</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- EDIT SUMMARY MODAL -->
+  <div id="modal-edit" class="modal">
+    <div class="modal-content">
+      <h4>Edit Summary</h4><br />
+      <form id="edit-form">
+        <div class="input-field">
+          <input type="text" id="title2" required>
+          <label for="title">Episode Title</label>
+        </div>
+        <div class="input-field">
+          <textarea id="content2" class="materialize-textarea" required></textarea>
+          <label for="content">Episode Content</label>
+        </div>
+        <button class="btn blue darken-3 z-depth-0">Edit</button>
       </form>
     </div>
   </div>
