@@ -10,10 +10,17 @@ function renderFood(doc) {
   let cross = document.createElement('div');
   let pen = document.createElement('button');
 
+pen.setAttribute("type", "button")
+pen.setAttribute("class", "btn btn-info btn-lg")
+pen.setAttribute("data-toggle", "modal")
+pen.setAttribute("data-target", "#myModal")
 
-//  pen.setAttribute('data-target', 'modal-edit');
-  //pen.setAttribute('class', 'btn modal-trigger');
-
+// pen.setAttribute("id", "test")
+// pen.setAttribute("data-target", "modal1")
+//   pen.setAttribute("class", "waves-effect waves-light btn modal-trigger");
+// pen.setAttribute("href", "#modal1");
+// //pen.setAttribute("data-idClient", "{{$client->id}}" data-nom="MON" data-prenom="{{$client->prenom}}"
+//     //data-adresse="{{$client->adresse}}" data-tel1="{{$client->tel1}}" data-tel2="{{$client->tel2}}")
 
 
   li.setAttribute('data-id', doc.id);
@@ -36,12 +43,13 @@ function renderFood(doc) {
 
 pen.addEventListener('click',(e) =>{
   e.stopPropagation();
-  let id = e.target.parentElement.getAttribute('data-id');
-  db.collection('food').doc(id).update({
-    product: form.product.value,
-    merk: form.merk.value,
-    kcal: form.kcal.value
-  })
+   let id = e.target.parentElement.getAttribute('data-id');
+console.log(id);
+  // db.collection('food').doc(id).update({
+  //   product: form.product.value,
+  //   merk: form.merk.value,
+  //   kcal: form.kcal.value
+  // })
 
 });
   // deleting data
@@ -88,12 +96,23 @@ db.collection('food').orderBy('product').onSnapshot(snapshot => {
   })
 })
 
-// setup materialize components
-document.addEventListener('DOMContentLoaded', function() {
+//materialize initial
 
-  var modals = document.querySelectorAll('.modal');
-  M.Modal.init(modals);
+  $(document).ready(function(){
+    $('.modal').modal({
+      ready: function(modal, trigger){
+        modal.find('input[name="nom"]').val(trigger.data('nom'))
+      }
+    });
+  });
 
 
-
-});
+// // setup materialize components
+// document.addEventListener('DOMContentLoaded', function() {
+//
+//   var modals = document.querySelectorAll('.modal');
+//   M.Modal.init(modals);
+//
+//
+//
+// });

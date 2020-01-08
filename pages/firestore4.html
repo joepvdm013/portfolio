@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
@@ -14,6 +17,9 @@
   <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <title>FireStore</title>
 </head>
 
@@ -24,13 +30,13 @@
   <div class="content">
 
     <form id="add-food-form">
-<input type="text" name="product" placeholder="Product Naam">
-<input type="text" name="merk" placeholder="Merk Naam">
-<input type="text" name="kcal" placeholder="Kcal">
-<button id="btnAdd">Toevoegen</button>
+      <input type="text" name="product" placeholder="Product Naam">
+      <input type="text" name="merk" placeholder="Merk Naam">
+      <input type="text" name="kcal" placeholder="Kcal">
+      <button id="btnAdd">Toevoegen</button>
     </form>
 
-    <!-- EDIT SUMMARY MODAL -->
+    <!-- EDIT SUMMARY MODAL
     <div id="modal-edit" class="modal">
       <div class="modal-content">
         <h4>Edit Summary</h4><br />
@@ -46,10 +52,42 @@
           <button class="btn red lighten-3 z-depth-0">Edit</button>
         </form>
       </div>
-    </div>
+    </div>-->
+
 
     <ul id="food-list"></ul>
 
+  </div>
+  <!-- Modal Structure
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>-->
+
+
+  <div id="properties" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 
@@ -70,7 +108,9 @@
     firebase.analytics();
     const db = firebase.firestore();
   </script>
-<script src="../js/app4.js"></script>
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../js/app4.js"></script>
 </body>
 
 </html>
