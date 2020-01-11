@@ -9,6 +9,7 @@ html {
 
 }
 
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -26,6 +27,11 @@ h3{
   color: #FF355E;
   padding: 0px 8px;
   font-size: 24px;
+}
+h4{
+  color: #FF355E;
+  padding: 0px 8px;
+  font-size: 20px;
 }
 
 header img{
@@ -146,6 +152,7 @@ text-align: center;
 }
 .images img{
   padding: 15px;
+  width: 100%;
 }
 #eigen .images img{
 
