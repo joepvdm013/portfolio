@@ -1,0 +1,22 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+body{
+  text-align: center;
+  margin-top: 200px;
+}
+
+#timer{
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 100px;
+  font-weight: 300px;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  background-color: white;
+}
+
+button:hover{
+  background-color: #d9d9d9;
+}
