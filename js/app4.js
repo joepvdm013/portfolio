@@ -1,6 +1,13 @@
 const foodList = document.querySelector('#food-list');
 const form = document.querySelector('#add-food-form');
 
+// //getting data
+// db.collection('food').orderBy('product').get().then((snapshot) => {
+//   snapshot.docs.forEach(doc => {
+//     renderFood(doc);
+//   })
+// });
+
 //poc2: create element and render food
 function renderFood(doc) {
   let li = document.createElement('li');
@@ -45,11 +52,11 @@ pen.addEventListener('click',(e) =>{
   e.stopPropagation();
    let id = e.target.parentElement.getAttribute('data-id');
 console.log(id);
-  // db.collection('food').doc(id).update({
-  //   product: form.product.value,
-  //   merk: form.merk.value,
-  //   kcal: form.kcal.value
-  // })
+  db.collection('food').doc(id).update({
+    product: form.product.value,
+    merk: form.merk.value,
+    kcal: form.kcal.value
+  })
 
 });
   // deleting data
@@ -96,15 +103,6 @@ db.collection('food').orderBy('product').onSnapshot(snapshot => {
   })
 })
 
-//materialize initial
-
-  $(document).ready(function(){
-    $('.modal').modal({
-      ready: function(modal, trigger){
-        modal.find('input[name="nom"]').val(trigger.data('nom'))
-      }
-    });
-  });
 
 
 // // setup materialize components

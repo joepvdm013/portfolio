@@ -13,9 +13,6 @@ const setupUI = (user) => {
       `;
       accountDetails.innerHTML = html;
     })
-
-
-
     //toggle ui elements
     loggedInLinks.forEach(item => item.style.display = 'block');
     loggedOutLinks.forEach(item => item.style.display = 'none');
