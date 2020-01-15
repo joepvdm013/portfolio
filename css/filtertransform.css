@@ -1,0 +1,14 @@
+.images1 img:hover{
+  filter:grayscale(100%);
+  transform: scale(1.1);
+}
+
+.images2 img:hover{
+  filter: blur(5px);
+  transform: rotate(20deg);
+}
+
+.images3 img:hover{
+  filter: hue-rotate(360deg);
+  transform:  skewY(20deg);
+}

@@ -1,0 +1,14 @@
+.gallery{
+  margin: 10px 50px;
+}
+
+.gallery img{
+  transition: 1s;
+  padding: 15px;
+  width: 20%;
+}
+
+.gallery img:hover{
+  filter:hue-rotate(360deg);
+  transform: scale(1.1);
+}
