@@ -13,9 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-a {
-  color: #2dc997;
-}
+
 
 a:hover, a:active, a:focus {
   color: #FF355E;
